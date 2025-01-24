@@ -1,0 +1,8 @@
+
+--------CPU ----------
+A central processing unit (CPU), also called a central processor, main processor, or just processor, is the primary processor in a given computer.  Its electronic circuitry <b> executes instructions of a computer program </b>, such as arithmetic, logic, controlling, and input/output (I/O) operations
+
+
+--------GPU ----------
+
+A graphics processing unit (GPU) is a specialized electronic circuit initially designed for digital image processing and to accelerate computer graphics, being present either as a discrete video card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles. After their initial design, GPUs were found to be useful for non-graphic calculations involving embarrassingly parallel problems due to their parallel structure. Other non-graphical uses include the training of neural networks and cryptocurrency mining.

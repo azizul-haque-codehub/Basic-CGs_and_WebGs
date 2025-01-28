@@ -1,0 +1,29 @@
+The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. Among other things, it can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.
+
+The Canvas API largely focuses on 2D graphics. The WebGL API, which also uses the <canvas> element, draws hardware-accelerated 2D and 3D graphics.
+
+** Guides and tutorials **
+Canvas tutorial
+A comprehensive tutorial covering both the basic usage of the Canvas API and its advanced features.
+
+HTML5 Canvas Deep Dive
+A hands-on, book-length introduction to the Canvas API and WebGL.
+
+Canvas Handbook
+A handy reference for the Canvas API.
+
+Manipulating video using canvas
+Combining <video> and <canvas> to manipulate video data in real time.
+
+  
+ ** Reference **
+HTMLCanvasElement
+CanvasRenderingContext2D
+CanvasGradient
+CanvasPattern
+ImageBitmap
+ImageData
+TextMetrics
+OffscreenCanvas
+Path2D Experimental
+ImageBitmapRenderingContext Experimental

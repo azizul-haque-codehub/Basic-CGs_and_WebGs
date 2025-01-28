@@ -1,0 +1,59 @@
+WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. WebGL does so by introducing an API that closely conforms to OpenGL ES 2.0 that can be used in HTML <canvas> elements. This conformance makes it possible for the API to take advantage of hardware graphics acceleration provided by the user's device.
+
+Support for WebGL is present in all modern browsers (see the compatibility tables below); however, the user's device must also have hardware that supports these features.
+
+The WebGL 2 API introduces support for much of the OpenGL ES 3.0 feature set; it's provided through the WebGL2RenderingContext interface.
+
+The <canvas> element is also used by the Canvas API to do 2D graphics on web pages.
+
+
+** Guides and tutorials ** 
+Below, you'll find an assortment of guides to help you learn WebGL concepts and tutorials that offer step-by-step lessons and examples.
+
+Guides
+Data in WebGL
+A guide to variables, buffers, and other types of data used when writing WebGL code.
+
+WebGL best practices
+Tips and suggestions to help you improve the quality, performance, and reliability of your WebGL content.
+
+Using extensions
+A guide to using WebGL extensions.
+
+Tutorials
+WebGL tutorial
+A beginner's guide to WebGL core concepts. A good place to start if you don't have previous WebGL experience.
+
+** Examples
+A basic 2D WebGL animation example
+This example demonstrates the simple animation of a one-color shape. Topics examined are adapting to aspect ratio differences, a function to build shader programs from sets of multiple shaders, and the basics of drawing in WebGL.
+
+** WebGL by example
+A series of live samples with short explanations that showcase WebGL concepts and capabilities. The examples are sorted according to topic and level of difficulty, covering the WebGL rendering context, shader programming, textures, geometry, user interaction, and more.
+
+** Advanced tutorials
+WebGL model view projection
+A detailed explanation of the three core matrices that are typically used to represent a 3D object view: the model, view and projection matrices.
+
+Matrix math for the web
+A useful guide to how 3D transform matrices work, and can be used on the web — both for WebGL calculations and in CSS transforms.
+
+ ** Resources
+Khronos WebGL site The main website for WebGL at the Khronos Group.
+WebGL Fundamentals A basic tutorial with fundamentals of WebGL.
+Raw WebGL: An introduction to WebGL A talk by Nick Desaulniers that introduces the basics of WebGL.
+WebGL Academy An HTML/JavaScript editor with tutorials to learn basics of webgl programming.
+WebGL Stats A site with statistics about WebGL capabilities in browsers on different platforms.
+
+
+** Libraries
+three.js is an open-source, fully featured 3D WebGL library.
+Babylon.js is a powerful, simple, and open game and 3D rendering engine packed into a friendly JavaScript framework.
+Pixi.js is a fast, open-source 2D WebGL renderer.
+Phaser is a fast, free and fun open source framework for Canvas and WebGL powered browser games.
+PlayCanvas is an open-source game engine.
+glMatrix is a JavaScript matrix and vector library for high-performance WebGL apps.
+twgl is a library for making webgl less verbose.
+RedGL is an open-source 3D WebGL library.
+vtk.js is a JavaScript library for scientific visualization in your browser.
+webgl-lint will help find errors in your WebGL code and provide useful info

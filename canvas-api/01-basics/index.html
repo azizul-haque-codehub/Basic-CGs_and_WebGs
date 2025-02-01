@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas API</title>
-</head>
-<body>
-    <canvas id="my-canvas"> 
-    In canvas fallback goes on here , can be any text or other dom element like img , p etc    
-    <!--By Default, canvas element has properties just width 300px , height width/2 = 150px-->
-    <p>p element in body</p>
-</canvas>   
-<p>
-    The canvas is initially blank. To display something, a script first needs to access the rendering context and draw on it. The <canvas> element has a method called getContext(), used to obtain the rendering context and its drawing functions. getContext() takes one parameter, the type of context. For 2D graphics, such as those covered by this tutorial, you specify "2d" to get a CanvasRenderingContext2D.
- <strong>
-    হ্যাঁ, `canvas` element থেকে 2D context অবতরণ (obtain) করার পর, `CanvasRenderingContext2D` এর সকল প্রপার্টি এবং মেথড ব্যবহার করে আঁকার কাজ করতে হয়। `getContext('2d')` মেথড দিয়ে 2D context পাওয়া যায়, এবং তারপর `CanvasRenderingContext2D` এর মেথডগুলো যেমন `fillRect()`, `strokeRect()`, `beginPath()`, `moveTo()`, `lineTo()`, `arc()`, `fill()`, `stroke()` ইত্যাদি ব্যবহার করে গ্রাফিক্স ড্রয়িং করা যায়।
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Canvas API</title>
+	</head>
+	<body>
+		<canvas id="my-canvas">
+			In canvas fallback goes on here , can be any text or other dom element
+			like img , p etc
+			<!--By Default, canvas element has properties just width 300px , height width/2 = 150px-->
+			<p>p element in body</p>
+		</canvas>
+		<p>
+			The canvas is initially blank. To display something, a script first needs
+			to access the rendering context and draw on it. The >canvas> element has a
+			method called getContext(), used to obtain the rendering context and its
+			drawing functions. getContext() takes one parameter, the type of context.
+			For 2D graphics, such as those covered by this tutorial, you specify "2d"
+			to get a CanvasRenderingContext2D. <br />
+			<strong>
+				হ্যাঁ, `canvas` element থেকে 2D context অবতরণ (obtain) করার পর,
+				`CanvasRenderingContext2D` এর সকল প্রপার্টি এবং মেথড ব্যবহার করে আঁকার
+				কাজ করতে হয়। `getContext('2d')` মেথড দিয়ে 2D context পাওয়া যায়, এবং
+				তারপর `CanvasRenderingContext2D` এর মেথডগুলো যেমন `fillRect()`,
+				`strokeRect()`, `beginPath()`, `moveTo()`, `lineTo()`, `arc()`,
+				`fill()`, `stroke()` ইত্যাদি ব্যবহার করে গ্রাফিক্স ড্রয়িং করা যায়। যেমন:
+				```javascript // HTML canvas element const canvas =
+				document.getElementById('myCanvas'); const ctx =
+				canvas.getContext('2d'); // 2D context পাওয়া // একেকটি ড্রইং অপারেশন
+				ctx.fillStyle = 'red'; // রঙ নির্বাচন ctx.fillRect(10, 10, 150, 100); //
+				একটি লাল রঙের আয়তক্ষেত্র আঁকা ctx.beginPath(); ctx.arc(200, 75, 50, 0,
+				Math.PI * 2); // একটি বৃত্ত আঁকা ctx.fillStyle = 'blue'; ctx.fill(); ```
+				এছাড়া `CanvasRenderingContext2D` এর মধ্যে অনেক প্রপার্টি যেমন
+				`lineWidth`, `strokeStyle`, `globalAlpha`, `font` ইত্যাদি রয়েছে, যেগুলি
+				গ্রাফিক্সের স্টাইল এবং প্যামেটার কাস্টমাইজ করতে ব্যবহৃত হয়।
+			</strong>
+		</p>
+		<style>
+			div {
+				width: 150px;
+				height: 160px;
+				border: 1px solid;
+			}
+            canvas{
+                border: 1px solid;
+            }
+		</style>
+		<div></div>
+		<canvas id="canvas"></canvas>
+		<script>
+			const canvas = document.querySelector("#canvas");
+			const ctx = canvas.getContext("2d");
+			ctx.fillStyle = "red";
+			ctx.fillRect(20, 20, 50, 60);
 
-যেমন:
-
-```javascript
-// HTML canvas element
-const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');  // 2D context পাওয়া
-
-// একেকটি ড্রইং অপারেশন
-ctx.fillStyle = 'red';  // রঙ নির্বাচন
-ctx.fillRect(10, 10, 150, 100);  // একটি লাল রঙের আয়তক্ষেত্র আঁকা
-
-ctx.beginPath();
-ctx.arc(200, 75, 50, 0, Math.PI * 2);  // একটি বৃত্ত আঁকা
-ctx.fillStyle = 'blue';
-ctx.fill();
-```
-
-এছাড়া `CanvasRenderingContext2D` এর মধ্যে অনেক প্রপার্টি যেমন `lineWidth`, `strokeStyle`, `globalAlpha`, `font` ইত্যাদি রয়েছে, যেগুলি গ্রাফিক্সের স্টাইল এবং প্যামেটার কাস্টমাইজ করতে ব্যবহৃত হয়।
- </strong>
-</p>
-</body>
+			document.querySelector("#canvas").addEventListener("mousemove", (e) => {
+				console.log({ x: e.x, y: e.y });
+			});
+			window.addEventListener("mousemove", (e) => {
+				// console.log({ x: e.x, y: e.y });
+			});
+		</script>
+	</body>
 </html>

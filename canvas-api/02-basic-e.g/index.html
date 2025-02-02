@@ -13,13 +13,17 @@
 				}
 			</style>
 			<canvas width="500px" height="250px"></canvas>
-			<script>
+			<script type="text/ecmascript">
 				const canvas = document.querySelector("canvas");
 				const ctx = canvas.getContext("2d");
-                ctx.fillStyle = '#ff00ff'
-                ctx.fillRect(50, 50 , 100 , 100)
-                ctx.fillStyle = '#0f0'
-                ctx.fillRect(150, 150 , 100 , 100)
+				// ctx.fillStyle = "#ff00ff";
+				// ctx.fillRect(50, 50, 100, 100);
+				// ctx.fillStyle = "#0f0";
+				// ctx.fillRect(150, 150, 100, 100);
+				ctx.fillRect(25, 25, 100, 100);
+				ctx.clearRect(60, 60, 60, 60);
+                ctx.strokeStyle  = 'red'
+				ctx.strokeRect(50, 50, 50, 50);
 			</script>
 		</main>
 	</body>
